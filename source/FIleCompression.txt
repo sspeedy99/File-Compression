@@ -1,9 +1,0 @@
-Automate file compression using Huffman’s Coding
-Objectives:
-To create a program which take a file (basic PDF) and convert it into compressed file.
-The program should also be able to take an entrire directory, and compress all of its
-contents and store all the compressed files in new directory.
-Algorithm :
-All the compression will be done by Huffman’s coding.
-
-

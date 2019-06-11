@@ -52,7 +52,7 @@ void printCodes(struct MinHeapNode* root, string str)
   
 // The main function that builds a Huffman Tree and 
 // print codes by traversing the built Huffman Tree 
-void HuffmanCodes(char data[], int freq[], int size) 
+void HuffmanCodes(vector <char> data, vector <int> freq, int size) 
 { 
     struct MinHeapNode *left, *right, *top; 
   
@@ -96,10 +96,10 @@ void HuffmanCodes(char data[], int freq[], int size)
 int main() 
 { 
   
-    char arr[] = { 'a', 'b', 'c', 'd', 'e', 'f' }; 
-    int freq[] = { 5, 9, 12, 13, 16, 45 }; 
+    vector <char> arr = { 'a', 'b', 'c', 'd', 'e', 'f' }; 
+    vector <int> freq = { 5, 9, 12, 13, 16, 45 }; 
   
-    int size = sizeof(arr) / sizeof(arr[0]); 
+    int size = arr.size(); 
   
     HuffmanCodes(arr, freq, size); 
   
